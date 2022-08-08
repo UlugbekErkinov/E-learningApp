@@ -1,5 +1,5 @@
 ALLOWED_HOSTS = ["*"]
-DEBUG = True
+
 
 # Database configuration
 DATABASES = {
