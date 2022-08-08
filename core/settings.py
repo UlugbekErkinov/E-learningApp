@@ -29,6 +29,14 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+PAYCOM_SETTINGS = {
+    "KASSA_ID": "KASSA ID",  # token
+    "TOKEN": "TOKEN",
+    "SECRET_KEY": "TEST KEY OR PRODUCTIN KEY",  # password
+    "ACCOUNTS": {
+        "KEY": "order_id"
+    }
+}
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'paycomuz',
+    'post'
+
 ]
 
 MIDDLEWARE = [
@@ -118,6 +129,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
